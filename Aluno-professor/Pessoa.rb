@@ -1,0 +1,13 @@
+class Pessoa 
+	attr_reader :nome_completo,:matricula,:ano_nascimento,:endereco
+
+
+		protected
+
+		def set_cpf(cpf)
+			@cpf = cpf
+		end
+		def get_cpf
+			@cpf	
+		end
+end
