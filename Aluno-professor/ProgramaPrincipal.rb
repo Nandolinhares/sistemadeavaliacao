@@ -17,4 +17,4 @@ professor01.cadastro
 #professor01.get_cpf
 puts professor01.nome_completo
 
-puts puts
+puts 
