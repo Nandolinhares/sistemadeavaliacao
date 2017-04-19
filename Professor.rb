@@ -1,17 +1,29 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
 require_relative "Pessoa"
 
 class Professor < Pessoa 
-	attr_reader :numero_de_cadastro,:centro
+	attr_reader :centro
 
-	def initialize(nome_completo,numero_de_cadastro,centro)
-		super(nome_completo,cpf,ano_nascimento,endereco)
-		@numero_de_cadastro = numero_de_cadastro
+	def initialize(nome_completo,matricula,cpf,ano_nascimento,endereco,centro)
+		@nome_completo = nome_completo
+		@matricula = matricula
+		set_cpf(cpf) # Ver com Rodrigo se tem um jeito melhor de resolver o problema
+		@ano_nascimento = ano_nascimento
+		@endereco = endereco
 		@centro = centro
 	end
+
+	
 	def cadastro
 		puts "Nome: #{@nome_completo}"
-		puts "Número de cadastro: #{@numero_de_cadastro}"
+		puts "Matrícula: #{@matricula}"
+		puts "Ano de nascimento: #{@ano_nascimento}"
+		puts "Endereço : #{@endereco}"
 		puts "Centro: #{@centro}"
 	end
+
+	
+	
 end
 
