@@ -2,11 +2,11 @@
 # encoding: utf-8
 require_relative "Pessoa"
 require_relative "Aluno"
-require_relative "Professor"
+require_relative "Professor" 
 
 #----Programa Principal------#
 puts
-aluno01 = Aluno.new("Fernando",12345,1997,24,"Rua tal de tal","Ciência da Computação")
+aluno01 = Aluno.new("Fernando",12345,1234,1997,"Rua tal de tal","Ciência da Computação")
 aluno01.cadastro
 #aluno01.set_cpf(22) Não pode funcionar, pois ninguém pode alterar seu cpf
 
