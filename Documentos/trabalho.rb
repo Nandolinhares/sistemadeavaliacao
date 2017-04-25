@@ -1,4 +1,4 @@
-#trabalho.rb
+	#trabalho.rb
 require_relative "doc.rb" 
 
 	class Trabalho < Documentos
