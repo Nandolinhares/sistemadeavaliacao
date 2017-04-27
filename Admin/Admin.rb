@@ -37,7 +37,7 @@ end
 # eae nós podemos enviar somente a nota
 # isso, vamos ver na aula o que eles acham
 
-professor01 = Professor.new("Annabell",123498,123,1980,"Rua sei la","CCT")
+professor01 = Professor.new("Annabell",123498,123,1980,"Rua sei la","CCT","Inteligência Artificial")
 
 doc = Trabalho.new("Schulz Almeida Correia", "Análise do Solo de Campos dos Goytacaez", "Simulações Numéricas")
 
