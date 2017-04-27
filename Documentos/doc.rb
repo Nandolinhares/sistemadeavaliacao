@@ -1,14 +1,21 @@
 #doc.rb
 class Documentos
 		
+	def get_notaRecebida
+		@notaRecebida	
+	end
+
+	def get_data
+		@data
+	end
+	def status_avaliacao
+		@avaliado
+	end
+
 	protected
 
 		def set_autor(autor = "Não identificado")
 			@autor = autor
-		end
-
-		def set_avaliador(avaliador) # Vamos aplicar este método em admin
-			@avaliador = avaliador
 		end
 
 		def set_notaMax(notaMax = 10)
