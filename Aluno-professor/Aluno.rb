@@ -14,6 +14,7 @@ class Aluno < Pessoa
 		@curso = curso
 	end
 	def cadastro
+		puts "-------- Aluno-----------"
 		puts "Nome: #{@nome_completo}"
 		puts "Matrícula: #{@matricula}"
 		puts "Ano de Nascimento: #{@ano_nascimento}"

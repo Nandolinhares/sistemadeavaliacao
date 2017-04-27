@@ -12,9 +12,10 @@ aluno01.cadastro
 
 puts puts
 
-professor01 = Professor.new("Annabell",123498,123,1980,"Rua sei la","CCT")
+professor01 = Professor.new("Annabell",123498,123,1980,"Rua sei la","CCT","Inteligência Artificial")
 professor01.cadastro
-#professor01.get_cpf
-puts professor01.nome_completo
+puts professor01.get_cpf
+
+#puts professor01.nome_completo
 
 puts 
