@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
+
 require_relative "Pessoa"
 require_relative "Aluno"
 require_relative "Professor" 
@@ -13,8 +14,12 @@ aluno01.cadastro
 puts puts
 
 professor01 = Professor.new("Annabell",123498,123,1980,"Rua sei la","CCT","Inteligência Artificial")
-professor01.cadastro
-puts professor01.get_cpf
+professor01.avaliar_documento("Annabel",10,"11 de janeiro de 2017",true)
+professor01.resultado_da_avaliacao
+
+
+#professor01.cadastro
+#puts professor01.get_cpf
 
 #puts professor01.nome_completo
 

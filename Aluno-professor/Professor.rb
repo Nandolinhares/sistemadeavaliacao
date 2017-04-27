@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
+
+
 require_relative "Pessoa"
 
 class Professor < Pessoa 
@@ -25,8 +27,6 @@ class Professor < Pessoa
 		puts "Centro: #{@centro}"
 		puts "Área de pesquisa: #{@area_de_pesquisa}"
 	end
-
-	
 	
 end
 
