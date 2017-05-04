@@ -3,10 +3,10 @@ require_relative "doc.rb"
 
 	class Trabalho < Documentos
 
-		def initialize(autor,titulo,disciplina)
+		def initialize(autor,titulo,area_de_pesquisa)
 			set_autor(autor)
 			@titulo = titulo
-			@disciplina = disciplina		
+			@area_de_pesquisa = area_de_pesquisa		
 		end
 
 		#def alterar_autor
@@ -17,7 +17,7 @@ require_relative "doc.rb"
 		def info_trab
 			puts "Autor: #{@autor}"
 			puts "O título do trabalho é #{@titulo}"
-			puts "A disciplina do trabalho é #{@disciplina}"
+			puts "A área do trabalho é #{@area_de_pesquisa}"
 			puts "O trabalho foi entregue " + set_data()
 		end
 
@@ -37,8 +37,8 @@ require_relative "doc.rb"
 			@titulo = titulo
 		end
 
-		def alterar_disciplina(disciplina)
-			@disciplina = disciplina
+		def alterar_area_de_pesquisa(area_de_pesquisa)
+			@area_de_pesquisa = area_de_pesquisa
 		end
 
 	end

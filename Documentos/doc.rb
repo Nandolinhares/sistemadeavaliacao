@@ -1,7 +1,7 @@
 #doc.rb
 class Documentos
 
-	attr_reader :titulo,:disciplina
+	attr_reader :titulo,:area_de_pesquisa,:autor,:nota
 		
 	def get_notaRecebida
 		@notaRecebida	
