@@ -1,13 +1,28 @@
 class Pessoa 
-	attr_reader :nome_completo,:matricula,:ano_nascimento,:endereco
+	attr_reader :nome_completo,:matricula
 
-		def get_cpf
+		def mostrar_cpf
 			@cpf	
 		end
+
+
+		def mostrar_matricula
+			@matricula			
+		end		
+
 		protected
 
-		def set_cpf(cpf)
+		def ler_cpf(cpf)
 			@cpf = cpf
 		end
-		
+
+		def ler_matricula(matricula)
+
+			if matricula.to_s.size == 10
+				@matricula = matricula
+			else
+				raise 'Matrícula Inválida'	
+			end
+		end
+
 end

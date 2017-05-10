@@ -7,8 +7,8 @@ class Aluno < Pessoa
 
 	def initialize(nome_completo,matricula,cpf,curso)
 		@nome_completo = nome_completo
-		@matricula = matricula
-		set_cpf(cpf)
+		ler_matricula(matricula)
+		ler_cpf(cpf)
 		@curso = curso
 	end
 	def cadastro
@@ -19,3 +19,4 @@ class Aluno < Pessoa
 	end
 end
 
+ 

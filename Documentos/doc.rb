@@ -1,38 +1,13 @@
 #doc.rb
 class Documentos
 
-	attr_reader :titulo,:area_de_pesquisa,:autor,:nota
+	attr_reader :titulo,:area_de_pesquisa,:autor
 		
-	def get_notaRecebida
-		@notaRecebida	
+	def mostrar_nota
+		@nota	
 	end
 
-	def get_data
-		@data
-	end
-	def status_avaliacao
-		@avaliado
-	end
-
-	protected
-
-		def set_autor(autor = "Não identificado")
-			@autor = autor
-		end
-
-		def set_notaMax(notaMax = 10)
-			@notaMax = notaMax
-		end
-
-		def set_notaRecebida(notaRecebida = 0)
-			@notaRecebida = notaRecebida
-		end
-
-		def avaliado?(avaliado = true) # Métodos diferentes em professor e admin
-			@avaliado = avaliado
-		end
-
-		def set_data(data = "Hoje")
-			@data = data
-		end
+	def ler_nota(nota)
+			@nota = nota
+	end	
 end  
