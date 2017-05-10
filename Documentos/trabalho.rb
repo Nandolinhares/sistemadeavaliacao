@@ -2,12 +2,11 @@
 require_relative "doc.rb" 
 
 	class Trabalho < Documentos
-		attr_reader :nome_trabalho,:conteudo_trabalho
 
-		def initialize(autor,nome_trabalho,materia_trabalho)
+		def initialize(autor,titulo,area_de_pesquisa)
 			set_autor(autor)
-			@nome_trabalho = nome_trabalho
-			@materia_trabalho = materia_trabalho		
+			@titulo = titulo
+			@area_de_pesquisa = area_de_pesquisa		
 		end
 
 		#def alterar_autor
@@ -17,8 +16,8 @@ require_relative "doc.rb"
 		
 		def info_trab
 			puts "Autor: #{@autor}"
-			puts "O nome do trabalho é #{@nome_trabalho}"
-			puts "A materia do trabalho é #{@materia_trabalho}"
+			puts "O título do trabalho é #{@titulo}"
+			puts "A área do trabalho é #{@area_de_pesquisa}"
 			puts "O trabalho foi entregue " + set_data()
 		end
 
@@ -34,12 +33,12 @@ require_relative "doc.rb"
 
 		protected
 
-		def alterar_nome_trab(nome_trabalho)
-			@nome_trabalho = nome_trabalho
+		def alterar_titulo(titulo)
+			@titulo = titulo
 		end
 
-		def alterar_materia_trab(materia_trabalho)
-			@materia_trabalho = materia_trabalho
+		def alterar_area_de_pesquisa(area_de_pesquisa)
+			@area_de_pesquisa = area_de_pesquisa
 		end
 
 	end

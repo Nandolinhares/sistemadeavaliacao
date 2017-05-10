@@ -23,7 +23,26 @@ class Admin
 
 		doc.alterar_nota = professor.avaliar_documento(doc)
 
+<<<<<<< HEAD
 	end
+=======
+end
+
+# sim, mas como enviamos para o aluno? eles vão ter um atributo documento tmb?
+# não tem como enviar para o aluno, o que seria isso?
+# eu pensei em um atributo da classe Aluno, onde ele teria o trabalho dele
+# eae nós podemos enviar somente a nota
+# isso, vamos ver na aula o que eles acham
+
+professor01 = Professor.new("Annabell",123498,123,1980,"Rua sei la","CCT","Inteligência Artificial")
+
+doc = Trabalho.new("Schulz Almeida Correia", "Análise do Solo de Campos dos Goytacaez", "Simulações Numéricas")
+
+test = Admin.new()
+test.receber_documento(doc)
+puts test.doc.info_trab
+puts test.selecionar_professor(professor01)
+>>>>>>> b8f397d0ff55c881cd32b2295ae49d377d9d000d
 
 
 end
